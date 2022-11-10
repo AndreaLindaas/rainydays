@@ -1,3 +1,42 @@
-h1{
-    color:red;
+
+header {
+    grid-area: myheader;
+    display:flex;
+    height: 58px;
+
+  }
+  
+  main {
+    grid-area: mymain;
+    
+  }
+  footer {
+    grid-area: myfooter;
+    
+  }
+  
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "myheader"
+    "mymain"
+    "myfooter";
+}
+
+.logo{
+    height: 48px;
+    flex:2;
+   
+}
+.button-row{
+    flex:4;
+    text-align: right;
+}
+.main-header{
+    background-image: url("../images/graphics/hike.jpg");
+    height:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
