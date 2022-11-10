@@ -3,7 +3,7 @@ header {
     grid-area: myheader;
     display:flex;
     height: 58px;
-
+    padding:10px;
   }
   
   main {
@@ -22,6 +22,7 @@ body{
     "myheader"
     "mymain"
     "myfooter";
+    margin:0;
 }
 
 .logo{
@@ -33,10 +34,27 @@ body{
     flex:4;
     text-align: right;
 }
+.button-row i{
+    font-size: 26px;
+    margin-top: 18px;
+    margin-right: 10px;
+}
 .main-header{
     background-image: url("../images/graphics/hike.jpg");
     height:50px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+footer{
+    display:flex;
+    background-color:#0A3641;
+    color:#fff;
+    padding: 20px 10px;
+    text-align: center;
+    }
+
+footer a{
+    flex:1
 }
