@@ -47,6 +47,11 @@ body{
     background-position: center;
 }
 
+.product-img-woman, .product-img-man{
+    height:150px;
+    border-radius: 10px;
+}
+
 footer{
     display:flex;
     background-color:#0A3641;
