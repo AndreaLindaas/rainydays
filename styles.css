@@ -31,11 +31,28 @@ footer {
 	margin-top: 18px;
 	margin-right: 10px;
 }
-nav {
+
+.search,
+#search-checkbox {
+	display: none;
+}
+#search-checkbox:checked ~ .search {
+	display: block;
+}
+nav,
+#menu-checkbox {
 	display: none;
 }
 #menu-checkbox:checked ~ nav {
 	display: block;
+}
+nav {
+	background: grey;
+}
+nav a {
+	display: block;
+	color: #fff;
+	padding: 8px 16px;
 }
 .main-header {
 	background-image: url("../images/graphics/hike.jpg");
