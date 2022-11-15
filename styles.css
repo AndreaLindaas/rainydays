@@ -2,6 +2,7 @@ html,
 body {
 	height: 100%;
 	margin: 0;
+	text-align: center;
 }
 
 header {
@@ -55,7 +56,7 @@ nav a {
 	padding: 8px 16px;
 }
 .main-header {
-	background-image: url("../images/graphics/hike.jpg");
+	background-image: url("../images/graphics/mountain.jpg");
 	height: 50px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -81,7 +82,17 @@ nav a {
 	width: 110px;
 	border-radius: 10px;
 }
-
+.canoe-img {
+	background-image: url("../images/graphics/canoe.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50px;
+	border-radius: 25px;
+}
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
 footer {
 	display: flex;
 	background-color: #0a3641;
