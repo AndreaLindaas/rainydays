@@ -15,8 +15,26 @@ main {
 	min-height: 100%;
 	margin-bottom: -50px;
 }
+p {
+	padding: 0 20px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
 footer {
+	display: flex;
+	background-color: #0a3641;
+	color: #fff;
+	padding: 20px 10px;
+	text-align: center;
 	height: 50px;
+}
+
+footer a {
+	flex: 1;
+	color: #fff;
 }
 
 .logo {
@@ -83,25 +101,10 @@ nav a {
 	border-radius: 10px;
 }
 .canoe-img {
-	background-image: url("../images/graphics/canoe.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 50px;
-	border-radius: 25px;
+	margin-bottom: 66px;
 }
-h1 {
-	text-align: center;
-	font-size: 2em;
-}
-footer {
-	display: flex;
-	background-color: #0a3641;
-	color: #fff;
-	padding: 20px 10px;
-	text-align: center;
-}
-
-footer a {
-	flex: 1;
-	color: #fff;
+.canoe-img img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
 }
