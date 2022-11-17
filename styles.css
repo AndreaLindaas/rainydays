@@ -41,6 +41,7 @@ footer {
 	padding: 20px 10px;
 	text-align: center;
 	height: 50px;
+	margin-top: 60px;
 }
 
 footer a {
@@ -163,4 +164,22 @@ nav a {
 }
 .img-other img {
 	width: 50px;
+}
+.form div {
+	margin: 20px 0;
+}
+.form label {
+	display: block;
+}
+.form input,
+.form textarea {
+	border-radius: 5px;
+}
+.button-sub {
+	background-color: #0a3641;
+	color: #fff;
+	border: none;
+	padding: 8px 30px;
+	border-radius: 10px;
+	margin-top: 20px;
 }

@@ -45,38 +45,26 @@
 		</header>
 		<main>
 			<div class="main-header"></div>
-			<img src="images/product/jacket1.png" class="img-productpage" />
-			<h1>Fleecejacket, Green</h1>
-			<p class="price">799,-</p>
 
-			<div>
-				<input type="radio" id="small" name="size" />
-				<label for="small">S</label>
-				<input type="radio" id="medium" name="size" />
-				<label for="medium">M</label>
-				<input type="radio" id="large" name="size" />
-				<label for="large">L</label>
-				<input type="radio" id="x-large" name="size" />
-				<label for="x-large">XL</label>
-			</div>
-
-			<div>
-				<a href="checkout.html"
-					><button class="buy-button">Buy</button></a
-				>
-			</div>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
-				nesciunt? Labore facere magnam ab quia ad molestias quas ipsum
-				doloremque consectetur. Alias error animi qui repudiandae, quasi
-				odit voluptate officia?
-			</p>
-			<h2>Other jackets</h2>
-			<div class="img-other">
-				<img src="images/product/jacket2.png" />
-				<img src="images/product/jacket3.png" />
-				<img src="images/product/jacket4.png" />
-			</div>
+			<form class="form">
+				<div>
+					<label for="cardholder">Card holder</label>
+					<input type="text" id="cardholder" name="cardholder" />
+				</div>
+				<div>
+					<label for="cardnumber">Card number</label>
+					<input type="number" name="cardholder" id="cardnumber" />
+				</div>
+				<div>
+					<label for="valid">Valid until</label>
+					<input type="number" id="valid" name="valid" />
+				</div>
+				<div>
+					<label for="cvc">cvc</label>
+					<input type="number" id="cvc" name="cvc" />
+				</div>
+				<button type="submit" class="button-sub">Send</button>
+			</form>
 		</main>
 		<footer>
 			<a href="contact.html">contact us</a>
