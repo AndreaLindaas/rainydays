@@ -1,3 +1,4 @@
+/*Default styling*/
 html {
 	box-sizing: border-box;
 }
@@ -53,6 +54,17 @@ footer a {
 	height: 48px;
 	flex: 2;
 }
+
+@media screen and (min-width: 768px) {
+	header {
+		height: 116px;
+		padding: 26px;
+	}
+	.logo {
+		height: 80px;
+	}
+}
+
 .button-row {
 	flex: 4;
 	text-align: right;
@@ -93,6 +105,39 @@ nav a {
 	background-position: center;
 }
 
+@media screen and (min-width: 768px) {
+	.search {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 288px;
+	}
+	.search-icon-label {
+		display: none;
+	}
+	.menu-icon-label {
+		display: none;
+	}
+	nav {
+		display: block;
+		background: transparent;
+		display: grid;
+		grid-template-columns: 75px 75px 75px;
+		position: absolute;
+		left: 324px;
+		top: 80px;
+	}
+	nav a {
+		color: black;
+	}
+	.main-header {
+		height: 150px;
+	}
+}
+
+/****
+Frontpage
+******/
 .product-category {
 	position: relative;
 	display: block;
@@ -112,6 +157,27 @@ nav a {
 	width: 110px;
 	border-radius: 10px;
 }
+@media screen and (min-width: 768px) {
+	.product-categories {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.product-category span {
+		display: block;
+		position: static;
+		margin: 0;
+	}
+	.product-img-woman,
+	.product-img-man {
+		height: 300px;
+		width: 220px;
+	}
+}
+
+/***
+Contact us
+******/
 .canoe-img {
 	margin-bottom: 66px;
 }
@@ -120,6 +186,10 @@ nav a {
 	width: 200px;
 	border-radius: 50%;
 }
+
+/****
+List page
+*****/
 .jacket-list {
 	margin-bottom: 74px;
 	list-style-type: none;
@@ -140,6 +210,10 @@ nav a {
 .jacket-list p {
 	margin: 10px;
 }
+
+/******
+Product page
+******/
 .img-productpage {
 	width: 130px;
 	margin-top: 60px;
@@ -165,6 +239,10 @@ nav a {
 .img-other img {
 	width: 50px;
 }
+
+/******
+Form
+*****/
 .form div {
 	margin: 20px 0;
 }
@@ -182,4 +260,8 @@ nav a {
 	padding: 8px 30px;
 	border-radius: 10px;
 	margin-top: 20px;
+}
+.valid-cvc-container {
+	display: grid;
+	grid-template-columns: auto auto;
 }

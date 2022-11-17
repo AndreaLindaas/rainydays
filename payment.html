@@ -46,6 +46,10 @@
 		<main>
 			<div class="main-header"></div>
 
+			<h1>Checkout</h1>
+			<p>Total price: 799,-</p>
+			<p>Payment details</p>
+
 			<form class="form">
 				<div>
 					<label for="cardholder">Card holder</label>
@@ -55,16 +59,21 @@
 					<label for="cardnumber">Card number</label>
 					<input type="number" name="cardholder" id="cardnumber" />
 				</div>
-				<div>
-					<label for="valid">Valid until</label>
-					<input type="number" id="valid" name="valid" />
+
+				<div class="valid-cvc-container">
+					<div>
+						<label for="valid">Valid until</label>
+						<input type="number" id="valid" name="valid" />
+					</div>
+					<div>
+						<label for="cvc">cvc</label>
+						<input type="number" id="cvc" name="cvc" />
+					</div>
 				</div>
-				<div>
-					<label for="cvc">cvc</label>
-					<input type="number" id="cvc" name="cvc" />
-				</div>
-				<button type="submit" class="button-sub">Send</button>
 			</form>
+			<a href="thankyou.html"
+				><button type="submit" class="button-sub">Send</button></a
+			>
 		</main>
 		<footer>
 			<a href="contact.html">contact us</a>
