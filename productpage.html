@@ -21,7 +21,7 @@
 			/></a>
 			<div class="button-row">
 				<input type="checkbox" id="search-checkbox" />
-				<label for="search-checkbox">
+				<label for="search-checkbox" class="search-icon-label">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</label>
 				<div class="search">
@@ -33,7 +33,7 @@
 				</div>
 				<i class="fa-solid fa-cart-shopping"></i>
 				<input type="checkbox" id="menu-checkbox" />
-				<label for="menu-checkbox">
+				<label for="menu-checkbox" class="menu-icon-label">
 					<i class="fa-sharp fa-solid fa-bars"></i>
 				</label>
 				<nav>
@@ -43,12 +43,21 @@
 				</nav>
 			</div>
 		</header>
-		<main>
+		<main class="product-page">
 			<div class="main-header"></div>
-			<img src="images/product/jacket1.png" class="img-productpage" />
-			<h1>Fleecejacket, Green</h1>
-			<p class="price">799,-</p>
+			<div class="image-cont">
+				<div>
+					<img
+						src="images/product/jacket1.png"
+						class="img-productpage"
+					/>
+				</div>
 
+				<div>
+					<h1>Fleecejacket, Green</h1>
+					<h2 class="price">799,-</h2>
+				</div>
+			</div>
 			<div>
 				<input type="radio" id="small" name="size" />
 				<label for="small">S</label>
@@ -65,7 +74,7 @@
 					><button class="buy-button">Buy</button></a
 				>
 			</div>
-			<p>
+			<p class="description">
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
 				nesciunt? Labore facere magnam ab quia ad molestias quas ipsum
 				doloremque consectetur. Alias error animi qui repudiandae, quasi

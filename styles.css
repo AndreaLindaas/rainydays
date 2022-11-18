@@ -14,7 +14,6 @@ html,
 body {
 	height: 100%;
 	margin: 0;
-	text-align: center;
 }
 
 header {
@@ -109,8 +108,11 @@ nav a {
 	.search {
 		display: block;
 		position: absolute;
-		top: 50px;
-		left: 288px;
+		top: 42px;
+		right: 100px;
+	}
+	.search-bar {
+		height: 30px;
 	}
 	.search-icon-label {
 		display: none;
@@ -129,6 +131,7 @@ nav a {
 	}
 	nav a {
 		color: black;
+		font-weight: bold;
 	}
 	.main-header {
 		height: 150px;
@@ -144,11 +147,12 @@ Frontpage
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	padding-top: 52px;
+	padding-top: 140px;
+	text-align: center;
 }
 .product-category span {
 	position: absolute;
-	top: 118px;
+	top: 204px;
 	margin-left: 10px;
 }
 .product-img-woman,
@@ -178,6 +182,9 @@ Frontpage
 /***
 Contact us
 ******/
+.contact-page {
+	text-align: center;
+}
 .canoe-img {
 	margin-bottom: 66px;
 }
@@ -187,12 +194,16 @@ Contact us
 	border-radius: 50%;
 }
 
+@media screen and (min-width: 768px) {
+}
+
 /****
 List page
 *****/
 .jacket-list {
 	margin-bottom: 74px;
 	list-style-type: none;
+	text-align: center;
 }
 .jacket-list li img {
 	width: 70px;
@@ -211,16 +222,23 @@ List page
 	margin: 10px;
 }
 @media screen and (min-width: 768px) {
+	.jacket-list a {
+		display: block;
+	}
 	.jacket-list {
 		display: grid;
 		grid-template-columns: auto auto auto;
 	}
-	.jacket-list p {
+	.jacket-list li img {
+		width: 130px;
 	}
 }
 /******
 Product page
 ******/
+.product-page {
+	text-align: center;
+}
 .img-productpage {
 	width: 130px;
 	margin-top: 60px;
@@ -246,19 +264,50 @@ Product page
 .img-other img {
 	width: 50px;
 }
+@media screen and (min-width: 768px) {
+	.image-cont {
+		display: grid;
+		grid-template-columns: 150px 300px;
+		text-align: center;
+		margin: 0 auto 30px auto;
+		width: 450px;
+	}
+	.buy-button {
+		margin: 30px;
+	}
+	.description {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.img-other img {
+		width: 100px;
+	}
+	.img-other {
+		gap: 80px;
+	}
+	.product-page h1 {
+		margin-top: 60px;
+	}
+}
 
 /******
 Form
 *****/
 .form div {
-	margin: 20px 0;
+	margin: 20px auto;
+	width: 270px;
 }
 .form label {
 	display: block;
+	text-align: left;
+	font-weight: bold;
 }
 .form input,
 .form textarea {
 	border-radius: 5px;
+	width: 100%;
+	height: 38px;
 }
 .button-sub {
 	background-color: #0a3641;
@@ -270,5 +319,56 @@ Form
 }
 .valid-cvc-container {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 144px auto;
+	gap: 34px;
+}
+.valid-cvc-container div {
+	width: auto;
+}
+.fa-solid-fa-check {
+	width: 50px;
+}
+.check-mark i {
+	font-size: 50px;
+	margin-top: 200px;
+	margin-bottom: 40px;
+}
+
+/******
+checkout
+*****/
+.checkout-page {
+	text-align: center;
+}
+
+/******
+payment
+*****/
+.payment-page {
+	text-align: center;
+}
+
+/******
+thankyou
+*****/
+.thankyou-page {
+	text-align: center;
+}
+
+/******
+about
+*****/
+.about-page {
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.about-page p {
+		max-width: 500px;
+		margin: 0 auto 60px auto;
+	}
+	.canoe-img img {
+		height: 400px;
+		width: 400px;
+		border-radius: 0;
+	}
 }
