@@ -210,7 +210,14 @@ List page
 .jacket-list p {
 	margin: 10px;
 }
-
+@media screen and (min-width: 768px) {
+	.jacket-list {
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+	.jacket-list p {
+	}
+}
 /******
 Product page
 ******/
