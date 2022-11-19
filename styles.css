@@ -34,6 +34,11 @@ h1 {
 	text-align: center;
 	font-size: 2em;
 }
+h1,
+h2,
+h3 {
+	font-family: "Source Sans 3", sans-serif;
+}
 footer {
 	display: flex;
 	background-color: #0a3641;
@@ -47,8 +52,11 @@ footer {
 footer a {
 	flex: 1;
 	color: #fff;
+	text-decoration: none;
 }
-
+footer a:visited {
+	color: #fff;
+}
 .logo {
 	height: 48px;
 	flex: 2;
@@ -63,7 +71,17 @@ footer a {
 		height: 80px;
 	}
 }
-
+button {
+	background-color: #0a3641;
+	color: #fff;
+	border: none;
+	padding: 8px 30px;
+	border-radius: 10px;
+}
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
 .button-row {
 	flex: 4;
 	text-align: right;
@@ -87,14 +105,28 @@ nav,
 }
 #menu-checkbox:checked ~ nav {
 	display: block;
+	position: absolute;
+	right: 0;
+	top: 58px;
+	width: 100%;
 }
 nav {
-	background: grey;
+	background: #0a3641;
 }
+
 nav a {
 	display: block;
 	color: #fff;
 	padding: 8px 16px;
+	text-decoration: none;
+	text-align: left;
+}
+nav a:hover {
+	background-color: grey;
+	color: #fff;
+}
+nav a:visited {
+	color: #fff;
 }
 .main-header {
 	background-image: url("../images/graphics/mountain.jpg");
@@ -129,10 +161,16 @@ nav a {
 		left: 324px;
 		top: 80px;
 	}
-	nav a {
+	nav a,
+	nav a:visited {
 		color: black;
 		font-weight: bold;
 	}
+
+	.selected-page {
+		text-decoration: underline;
+	}
+
 	.main-header {
 		height: 150px;
 	}
@@ -147,12 +185,15 @@ Frontpage
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	padding-top: 140px;
+	margin-top: 140px;
 	text-align: center;
+}
+.product-category:hover img {
+	border: 1px solid black;
 }
 .product-category span {
 	position: absolute;
-	top: 204px;
+	top: 66px;
 	margin-left: 10px;
 }
 .product-img-woman,
@@ -160,6 +201,9 @@ Frontpage
 	height: 150px;
 	width: 110px;
 	border-radius: 10px;
+}
+a:visited {
+	color: black;
 }
 @media screen and (min-width: 768px) {
 	.product-categories {
@@ -176,6 +220,13 @@ Frontpage
 	.product-img-man {
 		height: 300px;
 		width: 220px;
+		opacity: 0.7;
+	}
+	.product-category a {
+		text-decoration: none;
+	}
+	.product-category:hover img {
+		opacity: 1;
 	}
 }
 
@@ -212,14 +263,24 @@ List page
 .jacket-list li {
 	margin: 60px 0;
 }
+
+.jacket-list li:hover {
+	text-decoration: underline;
+}
+
 .jacket-list a {
 	display: flex;
+	text-decoration: none;
 }
 .jacket-list div {
 	flex: 2;
 }
 .jacket-list p {
 	margin: 10px;
+}
+.jacket-list .price {
+	font-weight: bold;
+	font-style: italic;
 }
 @media screen and (min-width: 768px) {
 	.jacket-list a {
@@ -247,11 +308,6 @@ Product page
 	font-weight: bold;
 }
 .buy-button {
-	background-color: #0a3641;
-	color: #fff;
-	border: none;
-	padding: 8px 30px;
-	border-radius: 10px;
 	margin-top: 20px;
 }
 .img-other {
@@ -310,11 +366,6 @@ Form
 	height: 38px;
 }
 .button-sub {
-	background-color: #0a3641;
-	color: #fff;
-	border: none;
-	padding: 8px 30px;
-	border-radius: 10px;
 	margin-top: 20px;
 }
 .valid-cvc-container {
