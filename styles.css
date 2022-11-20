@@ -115,6 +115,7 @@ nav,
 }
 nav {
 	background: #0a3641;
+	z-index: 1000;
 }
 
 nav a {
