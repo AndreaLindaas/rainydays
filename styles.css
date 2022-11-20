@@ -192,7 +192,7 @@ Frontpage
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	margin-top: 140px;
+	margin-top: 50px;
 	text-align: center;
 }
 .product-category:hover img {
@@ -223,11 +223,15 @@ a:visited {
 		position: static;
 		margin: 0;
 	}
+
 	.product-img-woman,
 	.product-img-man {
 		height: 300px;
 		width: 220px;
 		opacity: 0.7;
+	}
+	.product-category {
+		margin-top: 140px;
 	}
 	.product-category a {
 		text-decoration: none;
@@ -386,11 +390,6 @@ Form
 .fa-solid-fa-check {
 	width: 50px;
 }
-.check-mark i {
-	font-size: 50px;
-	margin-top: 200px;
-	margin-bottom: 40px;
-}
 
 /******
 checkout
@@ -412,7 +411,11 @@ thankyou
 .thankyou-page {
 	text-align: center;
 }
-
+.check-mark i {
+	font-size: 50px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
 /******
 about
 *****/
