@@ -157,7 +157,8 @@ nav a:visited {
 	.menu-icon-label {
 		display: none;
 	}
-	nav {
+	nav,
+	#menu-checkbox:checked ~ nav {
 		display: block;
 		background: transparent;
 		display: grid;
@@ -165,6 +166,7 @@ nav a:visited {
 		position: absolute;
 		left: 324px;
 		top: 80px;
+		width: auto;
 	}
 	nav a,
 	nav a:visited {
