@@ -98,6 +98,9 @@ button:hover {
 }
 #search-checkbox:checked ~ .search {
 	display: block;
+	position: absolute;
+	right: 138px;
+	top: 30px;
 }
 nav,
 #menu-checkbox {
