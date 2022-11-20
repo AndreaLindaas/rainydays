@@ -8,7 +8,7 @@
 
 GitHub: https://github.com/AndreaLindaas/rainydays
 
-Netlify: https://creative-basbousa-5fbf63.netlify.app/
+Netlify: https://rainydays-andrea.netlify.app/
 
 ## Technical report
 
