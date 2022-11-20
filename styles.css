@@ -92,6 +92,10 @@ button:hover {
 	margin-right: 10px;
 }
 
+.search-bar {
+	width: 126px;
+}
+
 .search,
 #search-checkbox {
 	display: none;
