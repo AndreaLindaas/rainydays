@@ -140,7 +140,7 @@ nav a:visited {
 }
 
 @media screen and (min-width: 768px) {
-	.search {
+	#search-checkbox:checked ~ .search {
 		display: block;
 		position: absolute;
 		top: 42px;
@@ -152,6 +152,7 @@ nav a:visited {
 	.search-icon-label {
 		display: none;
 	}
+
 	.menu-icon-label {
 		display: none;
 	}
