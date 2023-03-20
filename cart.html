@@ -12,8 +12,12 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="styles.css" />
-		<title>Rainydays - Fleecejacket</title>
-		<meta name="description" content="Great Fleecejacket" />
+		<title>RainyDays</title>
+		<meta
+			name="description"
+			content="Welcome to Raimydays jacket store.
+		Here you will find jackets for all your needs."
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -68,58 +72,36 @@
 					<i class="fa-sharp fa-solid fa-bars"></i>
 				</label>
 				<nav>
-					<a href="index.html">Home</a>
+					<a href="index.html" class="selected-page">Home</a>
 					<a href="about.html">About</a>
 					<a href="contact.html">Contact</a>
 				</nav>
 			</div>
 		</header>
-		<main class="product-page">
+		<main class="index-page">
 			<div class="main-header"></div>
-			<div class="image-cont">
-				<div>
+			<h1>Shoppingcart</h1>
+			<div class="cart-container">
+				<div class="cart-product">
 					<img
 						src="images/product/jacket1.jpg"
-						class="img-productpage"
-						alt="Green fleece jacket"
+						alt="green fleece jacket"
 					/>
+					<h2>Fleece jacket green</h2>
 				</div>
-
+				<div class="number-price">
+					<button class="cart-button">-</button>
+					<label for="number-product"></label>
+					<input type="text" id="number-product" />
+					<button class="cart-button">+</button>
+					<span>799,-</span>
+				</div>
+			</div>
+			<div class="shop-checkout">
 				<div>
-					<h1>Fleecejacket, Green</h1>
-					<h2 class="price">799,-</h2>
+					<a href="#" class="button-shop-checkout">Shop more</a>
 				</div>
-			</div>
-			<div>
-				<input type="radio" id="small" name="size" />
-				<label for="small">S</label>
-				<input type="radio" id="medium" name="size" />
-				<label for="medium">M</label>
-				<input type="radio" id="large" name="size" />
-				<label for="large">L</label>
-				<input type="radio" id="x-large" name="size" />
-				<label for="x-large">XL</label>
-			</div>
-
-			<div>
-				<a href="checkout.html"
-					><button class="buy-button">Add to cart</button></a
-				>
-			</div>
-			<p class="description">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim,
-				nesciunt? Labore facere magnam ab quia ad molestias quas ipsum
-				doloremque consectetur. Alias error animi qui repudiandae, quasi
-				odit voluptate officia?
-			</p>
-			<h2>Other jackets</h2>
-			<div class="img-other">
-				<img src="images/product/jacket2.jpg" alt="Red jacket" />
-				<img src="images/product/jacket3.jpg" alt="Grey jacket" />
-				<img
-					src="images/product/jacket4.jpg"
-					alt="Black and white jacket"
-				/>
+				<div><a href="#" class="button-shop-checkout">Checkout</a></div>
 			</div>
 		</main>
 		<footer>
