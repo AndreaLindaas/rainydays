@@ -77,7 +77,8 @@ footer a:visited {
 		height: 80px;
 	}
 }
-button {
+button,
+a.button-shop-checkout {
 	background-color: #0a3641;
 	color: #fff;
 	border: none;
@@ -483,13 +484,13 @@ about
 }
 .shop-checkout {
 	display: grid;
-	grid-template-columns: 116px 1fr;
+	grid-template-columns: 140px 1fr;
 	justify-content: center;
 	margin: 40px 0 0 40px;
 	gap: 10px;
 }
-a.button-shop-checkout {
+/* a.button-shop-checkout {
 	background-color: #0a3641;
 	color: #fff;
 	padding: 20px;
-}
+} */
