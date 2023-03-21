@@ -84,8 +84,10 @@ a.button-shop-checkout {
 	border: none;
 	padding: 8px 30px;
 	border-radius: 10px;
+	text-decoration: none;
 }
-button:hover {
+button:hover,
+a.button-shop-checkout:hover {
 	opacity: 0.8;
 	cursor: pointer;
 }
@@ -489,8 +491,3 @@ about
 	margin: 40px 0 0 40px;
 	gap: 10px;
 }
-/* a.button-shop-checkout {
-	background-color: #0a3641;
-	color: #fff;
-	padding: 20px;
-} */
