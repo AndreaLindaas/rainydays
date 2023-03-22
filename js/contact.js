@@ -24,7 +24,9 @@ function validateForm(event) {
 	} else {
 		messageError.style.display = "block";
 	}
-	console.log("hello");
+	// if (fullName && email && message) {
+	// 	window.location.href = "thankyou_contactform.html";
+	// }
 }
 
 form.addEventListener("submit", validateForm);

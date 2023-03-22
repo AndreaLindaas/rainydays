@@ -237,7 +237,7 @@ Frontpage
 	.product-category span {
 		display: block;
 		position: static;
-		margin: 0;
+		margin: 0 0 0 70px;
 	}
 
 	.product-img-woman,
@@ -409,6 +409,7 @@ Form
 .form-error {
 	display: none;
 	color: red;
+	
 }
 /******
 checkout
