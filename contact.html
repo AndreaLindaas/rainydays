@@ -52,7 +52,7 @@
 			/></a>
 			<div class="button-row">
 				<input type="checkbox" id="search-checkbox" />
-				<label for="search-checkbox">
+				<label for="search-checkbox" class="search-icon-label">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</label>
 				<div class="search">
@@ -66,7 +66,7 @@
 					><i class="fa-solid fa-cart-shopping"></i
 				></a>
 				<input type="checkbox" id="menu-checkbox" />
-				<label for="menu-checkbox">
+				<label for="menu-checkbox" class="menu-icon-label">
 					<i class="fa-sharp fa-solid fa-bars"></i>
 				</label>
 				<nav>
@@ -82,16 +82,25 @@
 
 			<form class="form">
 				<div>
-					<label for="fname">Full name</label>
+					<label for="fname">Full name (required) </label>
 					<input type="text" id="fname" name="fname" />
+					<div class="form-error" id="fullNameError">
+						Please enter your first name
+					</div>
 				</div>
 				<div>
-					<label for="email">Email*</label>
+					<label for="email">Email (required)</label>
 					<input type="email" name="email" id="email" />
+					<div class="form-error" id="emailError">
+						Please enter a valid email address
+					</div>
 				</div>
 				<div>
-					<label for="message">message*</label>
+					<label for="message">message (minimum 10 characters)</label>
 					<textarea id="message" name="message"></textarea>
+					<div class="form-error" id="messageError">
+						Your message must be at least 10 characters
+					</div>
 				</div>
 				<button type="submit" class="button-sub">Send</button>
 			</form>
@@ -100,5 +109,6 @@
 			<a href="contact.html">contact us</a>
 			<a href="about.html">about</a>
 		</footer>
+		<script src="js/contact.js"></script>
 	</body>
 </html>

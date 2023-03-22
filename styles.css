@@ -51,7 +51,7 @@ footer {
 	color: #fff;
 	padding: 20px 10px;
 	text-align: center;
-	height: 50px;
+	height: 60px;
 	margin-top: 60px;
 }
 
@@ -59,7 +59,8 @@ footer a {
 	flex: 1;
 	color: #fff;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 22px;
+	height: 22px;
 }
 footer a:visited {
 	color: #fff;
@@ -227,7 +228,10 @@ Frontpage
 @media screen and (min-width: 768px) {
 	.product-categories {
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: 300px 300px;
+    justify-content: center;
+    gap: 80px;
+}
 	}
 
 	.product-category span {
@@ -402,7 +406,10 @@ Form
 .fa-solid-fa-check {
 	width: 50px;
 }
-
+.form-error {
+	display: none;
+	color: red;
+}
 /******
 checkout
 *****/
@@ -435,14 +442,27 @@ about
 	text-align: center;
 }
 @media screen and (min-width: 768px) {
+	.about-container {
+		display: grid;
+		grid-template-columns: 380px auto;
+		justify-content: center;
+		gap: 40px;
+	}
+	.about-page h1 {
+		margin: 50px 0 50px 0;
+	}
 	.about-page p {
 		max-width: 500px;
 		margin: 0 auto 60px auto;
 	}
 	.canoe-img img {
-		height: 400px;
-		width: 400px;
+		height: 300px;
+		width: 300px;
 		border-radius: 0;
+	}
+
+	.about-page {
+		text-align: start;
 	}
 }
 /*Cart*/
