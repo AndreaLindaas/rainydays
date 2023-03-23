@@ -93,10 +93,30 @@
 						<h2>Fleece jacket green</h2>
 					</div>
 					<div class="number-price">
-						<button class="cart-button">-</button>
-						<input type="text" id="number-product" value="1" />
-						<button class="cart-button">+</button>
-						<span>NOK 799,-</span>
+						<button
+							class="cart-button"
+							onclick="decreaseItems('product-1')"
+						>
+							-
+						</button>
+
+						<input
+							class="product-1"
+							aria-label="number of items"
+							type="text"
+							value="1"
+						/>
+						<button
+							class="cart-button"
+							onclick="increaseItems('product-1')"
+						>
+							+
+						</button>
+						<span
+							>NOK
+							<span data-price="799" class="product-1">799</span
+							>,-</span
+						>
 					</div>
 				</div>
 				<div class="cart-item">
@@ -108,10 +128,29 @@
 						<h2>Rainyday Collection</h2>
 					</div>
 					<div class="number-price">
-						<button class="cart-button">-</button>
-						<input type="text" id="number-product" value="1" />
-						<button class="cart-button">+</button>
-						<span>NOK 799,-</span>
+						<button
+							class="cart-button"
+							onclick="decreaseItems('product-2')"
+						>
+							-
+						</button>
+						<input
+							class="product-2"
+							aria-label="number of items"
+							type="text"
+							value="1"
+						/>
+						<button
+							class="cart-button"
+							onclick="increaseItems('product-2')"
+						>
+							+
+						</button>
+						<span
+							>NOK
+							<span data-price="799" class="product-2">799</span
+							>,-</span
+						>
 					</div>
 				</div>
 			</div>
@@ -132,5 +171,6 @@
 			<a href="contact.html">contact us</a>
 			<a href="about.html">about</a>
 		</footer>
+		<script src="js/cart.js"></script>
 	</body>
 </html>
