@@ -25,5 +25,16 @@ function calculatePrice(product) {
 	const singelItemPrice = itemPrice.dataset.price;
 	const valueItems = document.querySelector("input." + product).value;
 	itemPrice.innerHTML = singelItemPrice * valueItems;
-	console.log(singelItemPrice * valueItems);
+
+	calculateTotalPrice();
+}
+
+function calculateTotalPrice() {
+	const prices = document.querySelectorAll(".price");
+	let total = 0;
+	for (let i = 0; i < prices.length; i++) {
+		total += Number(prices[i].innerHTML);
+	}
+	console.log(total);
+	document.querySelector(".totalPrice").innerHTML = total;
 }
