@@ -52,7 +52,7 @@ footer {
 	padding: 20px 10px;
 	text-align: center;
 	height: 60px;
-	margin-top: 60px;
+	margin-top: 140px;
 }
 
 footer a {
@@ -229,32 +229,31 @@ Frontpage
 	.product-categories {
 		display: grid;
 		grid-template-columns: 300px 300px;
-    justify-content: center;
-    gap: 80px;
+		justify-content: center;
+		gap: 80px;
+	}
 }
-	}
 
-	.product-category span {
-		display: block;
-		position: static;
-		margin: 0 0 0 70px;
-	}
+.product-category span {
+	display: block;
+	position: static;
+	margin: 0 0 0 70px;
+}
 
-	.product-img-woman,
-	.product-img-man {
-		height: 300px;
-		width: 220px;
-		opacity: 0.7;
-	}
-	.product-category {
-		margin-top: 140px;
-	}
-	.product-category a {
-		text-decoration: none;
-	}
-	.product-category:hover img {
-		opacity: 1;
-	}
+.product-img-woman,
+.product-img-man {
+	height: 300px;
+	width: 220px;
+	opacity: 0.7;
+}
+.product-category {
+	margin-top: 140px;
+}
+.product-category a {
+	text-decoration: none;
+}
+.product-category:hover img {
+	opacity: 1;
 }
 
 /***
@@ -409,7 +408,6 @@ Form
 .form-error {
 	display: none;
 	color: red;
-	
 }
 /******
 checkout
@@ -499,6 +497,10 @@ about
 .number-price span {
 	text-align: right;
 	font-weight: bold;
+}
+.total-price {
+	text-align: end;
+	margin: 40px 52px;
 }
 .cart-button {
 	background-color: #fff;
