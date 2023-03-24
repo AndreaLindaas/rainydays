@@ -375,6 +375,9 @@ Product page
 .modal-img {
 	width: 300px;
 }
+.reviews {
+	margin-top: 38px;
+}
 @media screen and (min-width: 768px) {
 	.image-cont {
 		display: grid;
