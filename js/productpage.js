@@ -19,12 +19,3 @@ closeModal.onclick = function () {
 buyButton.onclick = function () {
 	alert("The product is added to cart");
 };
-
-async function getJackets() {
-	const response = await fetch(url);
-	const result = await response.json();
-	showJackets(result);
-}
-function showJackets(result) {
-	for (let i = 0; i < result.length; i++) {}
-}
