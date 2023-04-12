@@ -4,18 +4,19 @@ const jacketList = document.querySelector(".jacket-list");
 async function getJackets() {
 	const response = await fetch(url);
 	const result = await response.json();
-	console.log(result);
 	showJackets(result);
 }
 
 function showJackets(result) {
 	for (let i = 0; i < result.length; i++) {
-		const jacket = `<li><a><img src="${result[i].images[0].src}" alt="${
+		const jacket = `<li><a href="productpage.html?id=${
+			result[i].id
+		}"><img src="${result[i].images[0].src}" alt="${
 			result[i].images[0].alt
 		}"/><div> <p>${result[i].categories[1].name}</p> <p>${
 			result[i].name
 		}</p> <p>${result[i].prices.price / 100},-</p></div></a></li>`;
-		console.log(result);
+
 		jacketList.innerHTML += jacket;
 	}
 }
