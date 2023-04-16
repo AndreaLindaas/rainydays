@@ -29,7 +29,6 @@ buyButton.onclick = function () {
 async function getJacket() {
 	const response = await fetch(url);
 	const result = await response.json();
-	console.log(url);
 	showJacket(result);
 }
 
@@ -37,6 +36,7 @@ function showJacket(jacket) {
 	showMainImage(jacket);
 	showText(jacket);
 	showDescription(jacket);
+	getRelatedJackets(jacket);
 }
 
 function showMainImage(jacket) {
@@ -51,8 +51,26 @@ function showText(jacket) {
 	namePrice.innerHTML = text;
 }
 function showDescription(jacket) {
-	const description = (document.querySelector(".description").innerHTML =
-		jacket.description);
+	document.querySelector(".description").innerHTML = jacket.description;
+}
+
+async function getRelatedJackets(jacket) {
+	const relatedProducts = document.querySelector(".img-other");
+	debugger;
+	for (let i = 0; i < jacket.attributes.length; i++) {
+		if (jacket.attributes[i].name === "related") {
+			for (let j = 0; j < jacket.attributes[i].terms.length; j++) {
+				let url =
+					"https://empty-maze.flywheelsites.com/wp-json/wc/store/products/" +
+					jacket.attributes[i].terms[j].name;
+
+				let response = await fetch(url);
+				let result = await response.json();
+
+				relatedProducts.innerHTML += `<a href="productpage.html?id=${jacket.attributes[i].terms[j].name}"><img src="${result.images[0].thumbnail}"/></a>`;
+			}
+		}
+	}
 }
 
 getJacket();
