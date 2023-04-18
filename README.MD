@@ -10,7 +10,21 @@ GitHub: https://github.com/AndreaLindaas/rainydays
 
 Netlify: https://rainydays-andrea.netlify.app/
 
-## Technical report
+## Update CMS course assignment (April 2023)
+
+I first tryed the Headless Mode plugin but that didn't work because I didn't get access to WP-config.php. This is a limitation on Flywheel. Instead I used Headless CMS plugin, which did not require to modify WP-config.php.
+
+I used the WooCommerce plugin to get online store support.
+
+I updated RainyDays to fetch data from API:
+
+-   jackets
+-   single jacket with ID as query parameter
+-   custom attribute to support Related jackets function.
+
+I also added sorting of jackets on the jackets list page. The sorting supports default, ascending and descending name ordering.
+
+## Technical report (old)
 
 ### 1. Summary
 
