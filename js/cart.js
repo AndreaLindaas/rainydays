@@ -35,6 +35,6 @@ function calculateTotalPrice() {
 	for (let i = 0; i < prices.length; i++) {
 		total += Number(prices[i].innerHTML);
 	}
-	console.log(total);
+
 	document.querySelector(".totalPrice").innerHTML = total;
 }
